@@ -1,0 +1,86 @@
+/* .biodata-container {
+    text-align: center;
+    font-family: 'Georgia', serif;
+    color: #FFFFFF;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(bioImg/bioBGD.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  } */
+  
+  .biodata-container {
+    text-align: center;
+    font-family: 'Georgia', serif;
+    color: #FFFFFF;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(bioImg/bioBGD.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .biodata-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .home-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent; /* Transparent brown background */
+    color: brown;
+    border: brown;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.3s ease, transform 0.10s ease;
+    box-shadow:  0 0px 15px rgb(211 39 39 / 32%);
+  }
+  
+  .home-btn:hover {
+    background-color: rgb(253, 253, 253); /* Slightly lighter transparent brown on hover */
+    transform: scale(1.05);
+  }
+  .biodata-page {
+    margin-bottom: 30px;
+  }
+  .biodata-section {
+    margin-bottom: 20px;
+  }
+  
+  .biodata-section h2 {
+    background-color: rgba(139, 69, 19, 0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  
+  .biodata-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .biodata-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+  }
+  
+  .biodata-table td:first-child {
+    width: 30%;
+    font-weight: bold;
+  }
+  

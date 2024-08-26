@@ -1,0 +1,79 @@
+.container {
+  text-align: center;
+  font-family: 'Georgia', serif;
+  color: #FFFFFF; /* White text */
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(images/bioBGD.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.content {
+  /* background-color: rgba(0, 0, 0, 0.5); Semi-transparent background */
+  padding: 20px;
+  border-radius: 10px;
+  color: crimson;
+}
+
+h1 {
+  font-size: 36px;
+  margin: 10px 0;
+  color: brown;
+}
+
+.details p {
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+.footer .divider {
+  border-bottom: 2px solid #FFFFFF;
+  width: 80px;
+  margin: auto;
+  padding-bottom: 10px;
+  margin-top: 30px;
+}
+.btn {
+  background-color: transparent; /* Transparent brown background */
+  color: brown; /* White text color */
+  border: brown; /* Remove default border */
+  border-radius: 25px; /* Rounded corners */
+  padding: 10px 20px; /* Padding for better spacing */
+  font-size: 16px; /* Font size */
+  font-family: 'Arial', sans-serif; /* Font family */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, transform 0.10s ease; /* Smooth transition for background color and transform */
+  box-shadow:  0 0px 15px rgb(211 39 39 / 32%);
+  margin-right: 20px; /* Space between buttons */
+}
+
+.btn:last-child {
+  margin-right: 0; /* No margin on the last button */
+}
+
+.btn:hover {
+  background-color: rgba(243, 242, 242, 0.938); /* Slightly lighter transparent brown on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.btn:active {
+  background-color: rgb(249, 246, 244); 
+  transform: scale(1); /* Return to original size when clicked */
+}
+
+.btn:focus {
+  outline: none; /* Remove the default focus outline */
+  /* box-shadow: 0 0 0 3px rgba(139, 69, 19, 0.5); */
+}
