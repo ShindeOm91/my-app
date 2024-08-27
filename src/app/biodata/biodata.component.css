@@ -37,7 +37,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: #d9c7c9;
+    background-color: #fff4f5;
   }
   
   .biodata-title {
@@ -74,8 +74,8 @@
   }
   
   .biodata-section h2 {
-    background-color: rgba(139, 69, 19, 0.8);
-    color: white;
+    background-color: #ffdae0;
+    color: rgb(4, 3, 3);
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -89,12 +89,14 @@
   
   .biodata-table td {
     padding: 10px;
-    border: 1px solid #ddd;
+    /* border: 1px solid #ddd; */
     font-size: 16px;
+    color: brown;
   }
   
   .biodata-table td:first-child {
     width: 30%;
     font-weight: bold;
+    color: crimson;
   }
   
