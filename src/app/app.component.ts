@@ -18,6 +18,25 @@ export class AppComponent {
 
   }
 
+  onMouseEnter(event: MouseEvent) {
+    const button = event.target as HTMLElement;
+    const rect = button.getBoundingClientRect();
+    const x = event.clientX - rect.left;
+
+    if (x > rect.width / 2) {
+      button.classList.remove('left-hover');
+      button.classList.add('right-hover');
+    } else {
+      button.classList.remove('right-hover');
+      button.classList.add('left-hover');
+    }
+  }
+
+  onMouseLeave() {
+    const button = document.querySelector('.animated-button');
+    button?.classList.remove('right-hover', 'left-hover');
+  }
+
   photos() {
     // alert("OMkar");
   }

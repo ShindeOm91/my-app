@@ -77,3 +77,46 @@ h1 {
   outline: none; /* Remove the default focus outline */
   /* box-shadow: 0 0 0 3px rgba(139, 69, 19, 0.5); */
 }
+
+.animated-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: brown;
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  border-radius: 25px;
+  box-shadow:  0 0px 15px rgb(211 39 39 / 32%);
+}
+
+.animated-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  background-color: #ff9696;
+  transition: all 0.4s ease;
+  z-index: 1;
+}
+
+.right-hover::before {
+  right: 0;
+  left: auto;
+  width: 100%;
+}
+
+.left-hover::before {
+  left: 0;
+  right: auto;
+  width: 100%;
+}
+
+.animated-button:hover {
+  /* color: rgb(255, 90, 90); */
+  background-color: rgba(243, 242, 242, 0.938); /* Slightly lighter transparent brown on hover */
+  transform: scale(1.05);
+}
