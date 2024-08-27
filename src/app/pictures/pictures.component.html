@@ -1,1 +1,10 @@
-<p>pictures works!</p>
+<div class="carousel-container">
+    <button (click)="previousImage()" class="nav-button prev-button"><span>&#10094;</span></button>
+    
+    <div class="image-container">
+      <img [src]="images[currentIndex]" alt="Image Carousel">
+    </div>
+    
+    <button (click)="nextImage()" class="nav-button next-button"><span>&#10095;</span></button>
+  </div>
+  
