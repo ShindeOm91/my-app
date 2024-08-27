@@ -53,4 +53,16 @@
   .next-button {
     margin-left: 10px;
   }
+  .slideshow-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Adjust as per your design */
+    margin: auto;
+    overflow: hidden;
+  }
   
+  .slideshow-image {
+    width: 100%;
+    height: auto;
+    transition: opacity 1s ease-in-out;
+  }
