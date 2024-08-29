@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component , EventEmitter, Output} from '@angular/core';
 
 @Component({
   selector: 'app-pictures',
@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './pictures.component.css'
 })
 export class PicturesComponent {
+  @Output() homePage = new EventEmitter<string>();
   currentImage: string = '';
   currentIndex: number = 0;
   intervalId: any;
@@ -44,5 +45,9 @@ export class PicturesComponent {
     if (this.intervalId) {
       clearInterval(this.intervalId);
     }
+  }  
+  gotoHome() {
+    this.homePage.emit('cancel');
   }
+
 }
