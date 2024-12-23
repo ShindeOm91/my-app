@@ -12,7 +12,7 @@ import { PicturesComponent } from "./pictures/pictures.component";
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'my-app';
+  title = 'Omkar Portfolio';
   biodatas: boolean = false;
   home:boolean = true;
   picturs:boolean = false;
