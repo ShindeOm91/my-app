@@ -74,7 +74,7 @@
   }
   
   .biodata-section h2 {
-    background-color: #ffdae0;
+    background-color: #d7d7d7;
     color: rgb(4, 3, 3);
     padding: 10px;
     border-radius: 10px;
@@ -97,6 +97,6 @@
   .biodata-table td:first-child {
     width: 30%;
     font-weight: bold;
-    color: crimson;
+    color: #000000;
   }
   
